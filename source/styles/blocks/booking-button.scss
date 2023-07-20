@@ -1,0 +1,22 @@
+.booking-button {
+	padding: 12px 24px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	font-family: "OpenSans-Bold", sans-serif;
+	color: #ffffff;
+	background-color: #f91155;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #d8003f;
+		box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+	}
+
+	&:active {
+  color: #f9637c;
+  box-shadow: none;
+	}
+}

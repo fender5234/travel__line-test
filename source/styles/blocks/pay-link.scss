@@ -1,0 +1,19 @@
+.pay-link {
+ display: block;
+ width: 100%;
+ padding: 30px 70px;
+ font-weight: 600;
+	font-size: 14px;
+ line-height: 20px;
+ font-family: "OpenSans-Semibold",sans-serif;
+ text-decoration: none;
+	text-align: center;
+ color: #ffffff;
+ background-color: #3C3E43;
+
+ &--color-text {
+  display: inline;
+  padding: 0;
+  color: #ff4b77;
+ }
+}

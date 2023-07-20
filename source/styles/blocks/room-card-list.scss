@@ -1,0 +1,29 @@
+.room-card-list {
+	display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 32px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.room-card-list__item {
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(180deg, rgba(10, 34, 64, 0.1) 0%, #0a2240 100%);
+		border-radius: 10px;
+	}
+
+	&:hover {
+		.discount {
+			display: block;
+		}
+	}
+}

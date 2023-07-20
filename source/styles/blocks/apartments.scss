@@ -1,0 +1,18 @@
+.apartments {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+	height: 100vh;
+ background-image: url("../images/bg-line.webp");
+	background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.apartments__title {
+ margin: 30px 0;
+	font-weight: 500;
+	font-size: 36px;
+	font-family: "Roboto-Medium", sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+}
