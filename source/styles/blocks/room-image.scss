@@ -1,3 +1,11 @@
 .room-image {
 	border-radius: 10px;
+
+	@include media-tablet {
+		height: 100%;
+	}
+
+	@include media-mobile {
+		height: 100%;
+	}
 }

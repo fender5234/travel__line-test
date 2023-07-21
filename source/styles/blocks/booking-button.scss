@@ -19,4 +19,15 @@
   color: #f9637c;
   box-shadow: none;
 	}
+
+	@include media-tablet {
+		width: 100%;
+		margin-top: 16px;
+ 	}
+
+	 @include media-mobile {
+		width: 100%;
+		margin-top: 16px;
+		font-size: 14px;
+ 	}
 }

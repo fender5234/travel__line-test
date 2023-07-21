@@ -1,10 +1,24 @@
 .room-card-list {
 	display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-gap: 32px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 32px;
 	margin: 0;
 	padding: 0;
 	list-style: none;
+
+	@include media-tablet {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 32px;
+		justify-content: center;
+	}
+
+	@include media-mobile {
+		display: flex;
+		flex-direction: column;
+		gap: 32px 0;
+		padding: 0 16px 16px;
+	}
 }
 
 .room-card-list__item {
@@ -25,5 +39,14 @@
 		.discount {
 			display: block;
 		}
+	}
+
+	@include media-tablet {
+		flex-basis: 328px;
+		min-height: 420px;
+	}
+
+	@include media-mobile {
+		min-height: 347px;
 	}
 }

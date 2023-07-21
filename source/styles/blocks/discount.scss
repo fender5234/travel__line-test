@@ -1,18 +1,18 @@
 .discount {
- position: absolute;
- top: 20px;
- left: 20px;
- z-index: 1;
- display: none;
- width: 215px;
- height: 30px;
- padding: 9px 15px 0;
- font-weight: 700;
- font-size: 14px;
- line-height: 20px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	z-index: 1;
+	display: none;
+	width: 215px;
+	height: 30px;
+	padding: 9px 15px 0;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 20px;
 	font-family: "Roboto-Bold", sans-serif;
- color: #ffffff;
- background-image: url("../images/icon-discount.svg");
- background-repeat: no-repeat;
- background-position: 0 center;
+	color: #ffffff;
+	background-image: url("../images/icon-discount.svg");
+	background-repeat: no-repeat;
+	background-position: 0 center;
 }

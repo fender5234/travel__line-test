@@ -12,7 +12,7 @@
 
 @mixin media-tablet {
 	@media (max-width: 1199px) {
-		@media (min-width: 768px) {
+		@media (min-width: 760px) {
 			@content;
 		}
 	}
