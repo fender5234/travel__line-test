@@ -1,5 +1,5 @@
 .card-top-wrapper {
-	position: absolute;
+	position: relative;
 	top: 0;
 	left: 0;
 	z-index: 1;
@@ -9,9 +9,17 @@
 	box-sizing: border-box;
 	width: 100%;
 	height: 100%;
+	min-height: 372px;
 	padding: 24px;
 
+
+	@include media-tablet {
+		min-height: 420px;
+		padding: 20px;
+	}
+
 	@include media-mobile {
+		min-height: 347px;
 		padding: 20px;
 	}
 }

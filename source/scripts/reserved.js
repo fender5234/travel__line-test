@@ -1,27 +1,23 @@
-const reservedToggle = () => {
-	const hotelCardList = document.querySelector('.room-card-list');
+const reservedToggle = (cardList) => {
+	const modalClickArea = cardList.querySelector('.booking-modal__click-area');
+	const modalBooking = cardList.querySelector('.booking-modal');
+	const buttonReserved = cardList.querySelector('.booking-button');
 
-	if (hotelCardList) {
-		const cardWrapper = hotelCardList.querySelectorAll('.card-top-wrapper');
-		const modalBooking = hotelCardList.querySelectorAll('.booking-modal');
-		const hotelCardListItem = hotelCardList.querySelectorAll('.room-card-list__item');
-		const buttonReserved = hotelCardList.querySelectorAll('.booking-button');
+	const cardListItemHandler = () => {
+		modalBooking.classList.add('booking-modal--active');
+		cardList.removeEventListener('mouseout', cardListItemHandler);
+	};
 
-		
+	const buttonHandler = () => {
+		cardList.addEventListener('mouseout', cardListItemHandler);
+	};
 
-		hotelCardList.addEventListener('click', (event) => {
-			hotelCardListItem.forEach((item) => {
-				if (event.target === item.querySelector('.booking-button')) {
-					item.addEventListener('mouseover', (evt) => {
-						if (evt.relatedTarget.closest('LI'))
-							item.querySelector('.booking-modal').classList.add('booking-modal--active');
-					});
-				} else if (event.target === item.querySelector('.booking-modal')) {
-					item.querySelector('.booking-modal').classList.remove('booking-modal--active');
-				}
-			});
-		});
-	}
+	const modalHandler = () => {
+		modalBooking.classList.remove('booking-modal--active');
+	};
+
+	buttonReserved.addEventListener('click', buttonHandler);
+	modalClickArea.addEventListener('click', modalHandler);
 };
 
 export default reservedToggle;

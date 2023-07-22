@@ -1,5 +1,6 @@
 .pay-link {
 	display: block;
+	box-sizing: border-box;
 	width: 100%;
 	padding: 30px 70px;
 	font-weight: 600;
@@ -16,5 +17,21 @@
 		display: inline;
 		padding: 0;
 		color: #ff4b77;
+	}
+
+	@include media-tablet {
+		padding: 60px 70px;
+
+		&--color-text {
+			padding: 0;
+		}
+	}
+
+	@include media-mobile {
+		padding: 47px 70px;
+
+		&--color-text {
+			padding: 0;
+		}
 	}
 }
